@@ -83,7 +83,7 @@ $breakpoints: (
 
 body {
   position: relative;
-
+  background-color: #0C122C;;
   min-height: 100vh;
 
 }
@@ -96,8 +96,8 @@ body::before {
   left: 0;
   width: 100%;
   height: 100%;
-  z-index: -1;
-  background-color: #0F1B3D;
+  
+
   background-image: url(/images/bg-mobile.png);
   background-size: cover;
   background-position: top left;
@@ -106,7 +106,8 @@ body::before {
   @include media(xl) {
     background-image: url(/images/bg-desktop.png);
     background-position: bottom left;
-    background-size: contain;
+    background-size: cover;
+    height: 26.25rem;
   }
 }
 
@@ -126,6 +127,8 @@ body::before {
     display: grid;
     grid-template-columns: 1fr;
     gap: 1rem;
+    position: relative;
+    z-index: 1;
 
     @include media(xl) {
       margin-top: 289px;
