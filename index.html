@@ -18,13 +18,57 @@
 
 <body>
 
-  You've used 815 GB of your storage
+  <main class="main">
+    <header class="sr-only">
+      <h1>Fylo Data Storage</h1>
+    </header>
 
-  185 GB Left
+    <div class="container">
 
-  0 GB
-  1000 GB
+      <section aria-labelledby="s01" class="file-component">
+        <h2 class="sr-only" id="s01">Files</h2>
+        <a href="/#" class="logo-link">
+          <img src="/images/logo.svg" alt="">
+        </a>
+        <div class="file-buttons">
+          <button aria-label="document">
+            <img src="/images/icon-document.svg" alt="">
+          </button>
+          <button aria-label="folder">
+            <img src="/images/icon-folder.svg" alt="">
+          </button>
+          <button aria-label="upload">
+            <img src="/images/icon-upload.svg" alt="">
+          </button>
+        </div>
 
+      </section>
+      <section class="report-component" aria-labelledby="s02">
+        <h2 class="sr-only" id="s02">Storage report</h2>
+        <div>
+          <p class="message">You've used <strong>815 GB</strong> of your storage</p>
+          <div class="indicator-container">
+            <div class="indicator-line">
+              <div class="indicator-circle"></div>
+            </div>
+          </div>
+        </div>
+        <div class="consumption-container">
+          <span>0 GB</span>
+          <span>1000 GB</span>
+        </div>
+        <div class="storage-left">
+          <p class="text"><strong>185</strong> GB Left</p>
+          <span class="triangle"></span>
+        </div>
+
+      </section>
+
+    </div>
+
+
+
+  </main>
 </body>
 
 </html>
